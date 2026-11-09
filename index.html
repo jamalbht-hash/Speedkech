@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self'; form-action 'none'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<title>SpeedKech – Livraison à Marrakech</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="hero.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-food" viewBox="0 0 24 24"><path d="M4 10a8 6 0 0 1 16 0z"/><path d="M3 13.5h18"/><path d="M4 17h16l-1 1.5a2.5 2.5 0 0 1-2 1H7a2.5 2.5 0 0 1-2-1z"/></symbol>
+<symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 11.5a1 1 0 0 0 1 .8h8.8a1 1 0 0 0 1-.8L20 7H6"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol>
+<symbol id="i-med" viewBox="0 0 24 24"><path d="M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7z"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+<symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+</defs></svg>
+<header><div class="wrap"><nav aria-label="Navigation principale">
+<a class="logo" href="#accueil" aria-label="SpeedKech, accueil"><img src="logo.svg" alt="" width="40" height="40"><span>SpeedKech<small>Livraison à Marrakech</small></span></a>
+<button class="burger" id="burger" aria-expanded="false" aria-controls="links" aria-label="Menu"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg></button>
+<div class="links" id="links"><a href="#accueil" aria-current="page">Accueil</a><a href="restaurants.html">Restaurants</a><a href="#services">Courses</a><a href="#services">Colis</a><a href="#valeurs">À propos</a><a href="#contact">Contact</a><a href="dashboard.html">Tableau de bord</a></div>
+<button class="btn d nbtn" data-open="login">Se connecter</button><button class="btn g nbtn" data-open="signup">S’inscrire</button>
+</nav></div></header>
+
+<main id="accueil">
+<div class="hero">
+
+<div class="wrap"><div class="in">
+<p class="tag">RAPIDE · FIABLE · PARTOUT À MARRAKECH</p>
+<h1>Votre livraison, <em>à toute vitesse !</em></h1>
+<p class="lead">Commandez vos plats, faites vos achats ou envoyez vos colis. SpeedKech s’occupe du reste.</p>
+<form class="search" id="addr" novalidate autocomplete="off" role="search">
+<span class="pin"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg></span><input id="addrIn" type="text" maxlength="120" placeholder="Votre adresse à Marrakech…" aria-label="Votre adresse à Marrakech">
+<button class="btn g" type="submit">Commander →</button></form>
+<p class="msg" id="addrMsg" role="status"></p>
+<div class="chips"><span>Livraison rapide</span><span>Paiement sécurisé</span><span>Support 24/7</span></div>
+</div></div></div>
+
+<div class="wrap" id="services"><div class="cats">
+<a class="cat" href="restaurants.html"><div class="ico"><svg class="i" aria-hidden="true"><use href="#i-food"/></svg></div><div><h3>Restaurants</h3><p>Vos plats préférés, livrés chez vous</p></div></a>
+<a class="cat" href="#services"><div class="ico"><svg class="i" aria-hidden="true"><use href="#i-cart"/></svg></div><div><h3>Courses</h3><p>Produits frais et courses du quotidien</p></div></a>
+<a class="cat" href="#services"><div class="ico"><svg class="i" aria-hidden="true"><use href="#i-box"/></svg></div><div><h3>Colis</h3><p>Envoyez et recevez vos colis facilement</p></div></a>
+<a class="cat" href="#services"><div class="ico"><svg class="i" aria-hidden="true"><use href="#i-med"/></svg></div><div><h3>Pharmacie</h3><p>Vos médicaments en toute sécurité</p></div></a>
+</div></div>
+
+<section><div class="wrap"><h2>Comment ça marche ?</h2><div class="steps">
+<div class="step"><span class="num">1</span><div><b>Choisissez</b><p>Parcourez les catégories et trouvez ce dont vous avez besoin.</p></div></div>
+<div class="step"><span class="num">2</span><div><b>Commandez</b><p>Indiquez votre adresse et confirmez votre commande.</p></div></div>
+<div class="step"><span class="num">3</span><div><b>Recevez</b><p>Notre livreur vous apporte votre commande rapidement.</p></div></div>
+</div></div></section>
+
+<section class="values" id="valeurs"><div class="wrap"><h2>Nos engagements</h2><div class="vgrid">
+<div class="v"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg><b>Vos données protégées</b><p>Connexion chiffrée, mots de passe jamais conservés en clair, et aucune revente de vos informations.</p></div>
+<div class="v"><svg class="i" aria-hidden="true"><use href="#i-card"/></svg><b>Paiement sécurisé</b><p>Paiement à la livraison ou en ligne via des prestataires certifiés. Nous ne stockons jamais votre carte.</p></div>
+<div class="v"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg><b>Livreurs vérifiés</b><p>Identité contrôlée, formation et assurance pour chaque livreur de la communauté.</p></div>
+<div class="v"><svg class="i" aria-hidden="true"><use href="#i-heart"/></svg><b>Local et équitable</b><p>Prix clairs sans frais cachés, commissions justes pour les commerçants de Marrakech.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="join"><div><h2>Rejoignez notre communauté !</h2><p>Commerçants, livreurs… développez votre activité avec SpeedKech.</p></div><button class="btn g" data-open="signup">Nous rejoindre →</button></div></div></section>
+</main>
+
+<footer><div class="wrap"><a class="logo sm" href="#accueil"><img src="logo.svg" alt="" width="28" height="28">SpeedKech</a>
+<nav aria-label="Pied de page"><a href="#valeurs">À propos</a><a href="#contact">FAQ</a><a href="#valeurs">Conditions</a><a href="#contact">Confidentialité</a></nav>
+<span>Fast. Reliable. Everywhere. ♡</span></div></footer>
+
+<dialog id="dlg" aria-labelledby="dt"><h2 id="dt" style="text-align:left;font-size:22px;margin-bottom:4px"></h2>
+<form id="af" novalidate autocomplete="on">
+<div class="hp" aria-hidden="true"><label>Ne pas remplir<input id="hp" tabindex="-1" autocomplete="off"></label></div>
+<div id="nameRow"><label for="nm">Nom complet</label><input class="f" id="nm" maxlength="60" autocomplete="name"></div>
+<label for="em">E-mail</label><input class="f" id="em" type="email" maxlength="254" autocomplete="email" required>
+<label for="pw">Mot de passe</label><input class="f" id="pw" type="password" maxlength="128" autocomplete="current-password" required>
+<div class="meter" id="mt" hidden><i></i></div>
+<p class="err" id="er" role="alert"></p>
+<div class="actions"><button class="btn g" type="submit" id="sb"></button><button class="btn d" type="button" id="cl">Annuler</button></div>
+<p class="fnote">Vos données sont envoyées uniquement via une connexion chiffrée (HTTPS).</p>
+</form></dialog>
+
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<title>SpeedKech – Restaurants à Marrakech</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="restaurants.css">
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Navigation principale">
+<a class="logo" href="index.html"><img src="logo.svg" alt="" width="40" height="40"><span>SpeedKech<small>Livraison à Marrakech</small></span></a>
+<div class="links" id="links"><a href="index.html">Accueil</a><a href="restaurants.html" aria-current="page">Restaurants</a><a href="index.html#valeurs">À propos</a><a href="index.html#contact">Contact</a></div>
+</nav></div></header>
+<main class="wrap">
+<div class="rhead"><h1>Commandez vos plats</h1><p>Choisissez votre restaurant, ajoutez vos plats, puis envoyez la commande sur WhatsApp.</p></div>
+<div class="rgrid">
+<div>
+  <div class="tools"><select class="f" id="rs" aria-label="Restaurant"></select><input class="f" id="q" type="search" maxlength="40" placeholder="Chercher un plat…" aria-label="Chercher un plat"></div>
+  <h2 id="rt"></h2><p id="ra" class="rsub"></p>
+  <div id="menu"></div>
+</div>
+<aside class="cartp" aria-label="Panier">
+  <h2>Votre commande</h2><ul id="lines"></ul>
+  <div class="tt"><span>Total plats</span><span id="tot">0 MAD</span></div>
+  <label for="nm">Nom</label><input class="f" id="nm" maxlength="50" autocomplete="name">
+  <label for="ph">Téléphone (optionnel)</label><input class="f" id="ph" maxlength="20" inputmode="tel" autocomplete="tel">
+  <label for="ad">Adresse de livraison</label><input class="f" id="ad" maxlength="160" autocomplete="street-address">
+  <label for="nt">Notes (optionnel)</label><input class="f" id="nt" maxlength="200">
+  <p class="err" id="er" role="alert"></p>
+  <button class="btn g wab" id="send" type="button">Envoyer sur WhatsApp</button>
+  <p class="fnote">Frais de livraison confirmés sur WhatsApp.</p>
+</aside>
+</div>
+</main>
+<script src="menus.js" defer></script>
+<script src="restaurants.js" defer></script>
+</body>
+</html>
